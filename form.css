@@ -1,0 +1,71 @@
+body {
+    background-color: #b17777;
+    height: 70vh;
+    width: 100vw;
+    color: white;
+}
+div {
+    height: 750px;
+    width: 450px;
+    border: 2px hsl(0, 0%, 3%) solid;
+    border-radius: 2%;
+    background-color: lightsteelblue;
+    margin-top: 5%;
+    margin-left: 35%;
+    padding: 2%;
+}
+label {
+    font-family: sans-serif;
+    font-size: small;
+    color: black;
+    font-weight: 800;
+}
+h1 {
+    text-align: center;
+    color: black;
+    font-weight: 800;
+}
+input {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=reset]{
+    background-color: red;
+}
+.radio {
+    position: absolute;
+    height: 15px;
+    width: 25px;
+    margin: 0px 0px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.gender1{
+    padding: 10px 20px;
+    margin: 8px 0;
+}
+.gender2{
+    padding: 15px 25px;
+    margin: 12px 10px;
+}
