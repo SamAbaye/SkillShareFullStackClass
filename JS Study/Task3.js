@@ -6,3 +6,4 @@ console.log(array[3]);
 array.push('Pinapple');
 
 console.log(array);
+
