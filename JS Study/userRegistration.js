@@ -5,3 +5,5 @@
         money: Math.floor(Math.random() * 97000)
     }
 };
+
+

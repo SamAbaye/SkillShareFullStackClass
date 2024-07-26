@@ -38,5 +38,4 @@ let car = [
 
 //console.log((car[1].price));
 
-
 export {car};
