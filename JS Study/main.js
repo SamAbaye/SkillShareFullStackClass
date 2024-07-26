@@ -12,5 +12,4 @@ console.log(new_user.money);
             }
         }
     }
-
 main();
