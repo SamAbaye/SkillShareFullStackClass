@@ -9,3 +9,5 @@ export function createMovie(title, director, genre){
       console.error("Wrong input!");
   }
 };
+
+

@@ -1,6 +1,5 @@
-import { createMovie } from "./movie.js";
 
-var movie1 = new Array();
+var movie1 = [];
 
 function addMovie(movie) {
 try {

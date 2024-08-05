@@ -9,6 +9,10 @@ let movie5 = createMovie("Pulp Fiction", "Quentin Tarantino","Crime, Drama");
 let movie6 = createMovie( "Fight Club", "David Fincher","Drama");
 let movie7 = createMovie("Schindler's List", "Steven Spielberg", "Biography, Drama, History");
 
+
+// const n = prompt("How many movies do you want to add?");
+// console.log("number of movies", n);
+
 addMovie(movie);
 addMovie(movie2);
 addMovie(movie3);

@@ -1,5 +1,5 @@
 document.getElementById('button').addEventListener('mousedown', function() {
-    th.style.backgroundColor = 'red';
+    this.style.backgroundColor = 'red';
 });
 
 const div1 = document.getElementById('main');
@@ -22,8 +22,34 @@ document.addEventListener('keydown', function(event) {
    document.getElementById('new').textContent = (`Key pressed: ${event.key}`);
 });
 
-// const draw = document.getElementById('table');
-// addEventListener('mousemove', function(event) {
-    
-//     p1.textContent = (`Mouse moved to (${event.clientX}, ${event.clientY})`);
-// });
+const div = document.getElementById('trail');
+const trailQueue = [];
+
+div.addEventListener('mousemove', function(event){
+
+  const trail = document.createElement('div');
+  
+  trail.style.position = 'fixed';
+  trail.style.left = `${event.clientX}px`;
+  trail.style.top = `${event.clientY}px`;
+  trail.style.width = '10px';
+  trail.style.height = '10px';
+  trail.style.backgroundColor = 'red';
+  trail.style.borderRadius = '50%';
+  trail.style.pointerEvents = 'none';
+  
+  div.append(trail);
+  trailQueue.push(trail);
+
+});
+
+function deleteOldTrail(){
+  if(trailQueue.length > 0) {
+    const oldestTrail = trailQueue.shift();
+    if(oldestTrail.parentNode){
+      oldestTrail.parentNode.removeChild(oldestTrail);
+    }
+  }
+};
+
+setInterval(deleteOldTrail, 20);
