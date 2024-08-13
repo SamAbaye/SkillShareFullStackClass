@@ -1,6 +1,9 @@
+import { createMovie } from "./movie.js";
 
-var movie1 = [];
+// Empty array to store all our movie data
+var movie1 = new Array();
 
+// our function to add movies
 function addMovie(movie) {
 try {
   movie1.splice(0, 0, movie);
@@ -10,6 +13,7 @@ catch(error){
   }
 }
 
+//our function to display movies
 function displayMovies(){
 try {
        for(let i=0; i<movie1.length; i++){
@@ -27,6 +31,7 @@ catch (error) {
    }
 }
 
+// our function to search movies
 function searchMovies(genre, director){
 try {
        for(let i=0; i<movie1.length; i++){
@@ -35,7 +40,6 @@ try {
                    break;
               } else if(i == movie1.length-1 && (genre != movie1[i]["genre"] && director != movie1[i]["director"])){
                     console.log("Not Found");
-                    // break;
               } 
         }
     }
@@ -44,4 +48,5 @@ catch (error) {
    }
 }
 
+// export all our functions
 export {addMovie, displayMovies, searchMovies};

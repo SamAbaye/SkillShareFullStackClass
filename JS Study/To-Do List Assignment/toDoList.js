@@ -24,36 +24,39 @@ btn.addEventListener('click', function(event){
    list.innerHTML = text
    
    list.style.width = '80%'
-   list.style.height = '25px'
-   list.style.border = '1px solid black'
+   list.style.height = '27px'
+   list.style.border = '0.5px solid black'
    list.style.borderRadius = '8px'
    list.style.backgroundColor = 'purple'
    list.style.color = 'white'
    list.style.marginLeft = '5%'
-   list.style.marginTop = '1.5%'
-   list.style.fontFamily = 'Franklin Gothic Medium', 'Arial Narrow'
+   list.style.marginTop = '1.3%'
+   list.style.fontFamily = 'Franklin Gothic Medium'
    list.style.padding = '3px'
 
+   
   
    delet.style.marginRight = '2px'
    delet.style.width = '60px'
    delet.style.height = '30px'
-   delet.style.border = '1px solid red'
+   delet.style.border = '1px red solid'
    delet.style.backgroundColor =  'red'
    delet.textContent = 'Delete'
    delet.style.color = 'black'
+   delet.style.cursor = 'pointer'
    delet.style.borderRadius = '8px'
-   delet.style.fontFamily = 'Franklin Gothic Medium', 'Arial Narrow'
+   delet.style.fontFamily = 'Franklin Gothic Medium'
    delet.style.margin = '1%'
 
    if(text != '' && text != "Please Enter your To-Do List!"){
       div.appendChild(container)
+      input.style.color = 'black'
    } else if(text === "Please Enter your To-Do List!"){
       input.value = ''
    }
    else {
        input.value = "Please Enter your To-Do List!"
-       input.style.color = 'red'
+       input.value.style.color = 'red'
    } 
    delet.addEventListener('click', function(){
       container.remove()
